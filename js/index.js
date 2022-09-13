@@ -42,7 +42,7 @@ const displayCard = (obj) => {
       .getElementById(`imgID_${item.name.common}`)
       .addEventListener("click", () => {
         localStorage.setItem("countryName", `${item.name.common}`);
-        location.assign("./rest-countries-api-with-color-theme-switcher/detailPage.html");
+        location.assign("./detailPage.html");
       });
   }
 };
