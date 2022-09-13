@@ -1,0 +1,31 @@
+#cardID {
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          border: none;
+
+          img {
+            height: 100%;
+            object-fit: cover;
+          }
+
+          #card-title {
+            font-weight: 800;
+          }
+
+          #card-pop {
+            span {
+              font-weight: 600;
+            }
+          }
+
+          #card-region {
+            span {
+              font-weight: 600;
+            }
+          }
+
+          #card-capital {
+            span {
+              font-weight: 600;
+            }
+          }
+        }

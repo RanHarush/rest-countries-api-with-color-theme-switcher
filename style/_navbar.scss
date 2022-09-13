@@ -1,0 +1,38 @@
+header {
+  nav {
+    background-color: var(--light-mode-el);
+
+    span {
+      font-size: 2em;
+      font-weight: 800;
+      color: var(--light-mode-txt);
+    }
+
+    .myBtn {
+      background-color: var(--light-mode-el);
+      color: var(--light-mode-txt);
+      border: none;
+      font-weight: 600;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  header {
+    nav {
+      padding: 0em 0 !important;
+
+      span {
+        font-size: 1.2em;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+
+      .myBtn {
+        font-size: 1em;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+    }
+  }
+}

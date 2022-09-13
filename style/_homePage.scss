@@ -1,0 +1,136 @@
+:root {
+  --home-page-font: 14px;
+  --detail-page-font: 16px;
+
+  --light-mode-txt: #111517;
+  --light-mode-el: #ffffff;
+  --light-mode-bg: #fafafa;
+  --light-mode-input: #858585;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: $primary-font;
+}
+
+.container-fluid {
+  background-color: var(--light-mode-bg);
+  height: 100vh;
+
+  header {
+    nav {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  main {
+    .main-wrapper {
+      .search {
+        .input-group {
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+          span {
+            background-color: var(--light-mode-el);
+            border: none;
+
+            svg {
+              color: var(--light-mode-txt);
+            }
+          }
+
+          input {
+            border: none;
+            color: var(--light-mode-txt);
+            background-color: var(--light-mode-el);
+
+            &::placeholder {
+              font-weight: 600;
+              font-size: 0.8em;
+              color: var(--light-mode-txt);
+            }
+          }
+        }
+
+        .dropdownMenu {
+          width: 9%;
+          border: none;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          font-size: 0.9em;
+          font-weight: 600;
+          color: var(--light-mode-txt);
+          background-color: var(--light-mode-el);
+        }
+      }
+
+      .content-wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3em;
+
+        #cardID {
+          background-color: var(--light-mode-el);
+
+          img {
+            cursor: pointer;
+          }
+
+          div {
+            #card-title {
+              color: var(--light-mode-txt);
+            }
+
+            #card-pop {
+              color: var(--light-mode-txt);
+
+              span {
+                color: var(--light-mode-txt);
+              }
+            }
+
+            #card-region {
+              color: var(--light-mode-txt);
+
+              span {
+                color: var(--light-mode-txt);
+              }
+            }
+
+            #card-capital {
+              color: var(--light-mode-txt);
+
+              span {
+                color: var(--light-mode-txt);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 420px) {
+  .main-wrapper {
+    padding: 2em 1em !important;
+
+    .search {
+      flex-direction: column;
+      gap: 3em;
+
+      .input-group {
+        width: 100% !important;
+        margin: 0 !important;
+      }
+
+      .dropdownMenu {
+        width: 60% !important;
+      }
+    }
+  }
+}

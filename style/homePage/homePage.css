@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+#cardID {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+#cardID img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#cardID #card-title {
+  font-weight: 800;
+}
+#cardID #card-pop span {
+  font-weight: 600;
+}
+#cardID #card-region span {
+  font-weight: 600;
+}
+#cardID #card-capital span {
+  font-weight: 600;
+}
+
+header nav {
+  background-color: var(--light-mode-el);
+}
+header nav span {
+  font-size: 2em;
+  font-weight: 800;
+  color: var(--light-mode-txt);
+}
+header nav .myBtn {
+  background-color: var(--light-mode-el);
+  color: var(--light-mode-txt);
+  border: none;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 420px) {
+  header nav {
+    padding: 0em 0 !important;
+  }
+  header nav span {
+    font-size: 1.2em;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  header nav .myBtn {
+    font-size: 1em;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+:root {
+  --home-page-font: 14px;
+  --detail-page-font: 16px;
+  --light-mode-txt: #111517;
+  --light-mode-el: #ffffff;
+  --light-mode-bg: #fafafa;
+  --light-mode-input: #858585;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.container-fluid {
+  background-color: var(--light-mode-bg);
+  height: 100vh;
+}
+.container-fluid header nav {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.container-fluid main .main-wrapper .search .input-group {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.container-fluid main .main-wrapper .search .input-group span {
+  background-color: var(--light-mode-el);
+  border: none;
+}
+.container-fluid main .main-wrapper .search .input-group span svg {
+  color: var(--light-mode-txt);
+}
+.container-fluid main .main-wrapper .search .input-group input {
+  border: none;
+  color: var(--light-mode-txt);
+  background-color: var(--light-mode-el);
+}
+.container-fluid main .main-wrapper .search .input-group input::-moz-placeholder {
+  font-weight: 600;
+  font-size: 0.8em;
+  color: var(--light-mode-txt);
+}
+.container-fluid main .main-wrapper .search .input-group input:-ms-input-placeholder {
+  font-weight: 600;
+  font-size: 0.8em;
+  color: var(--light-mode-txt);
+}
+.container-fluid main .main-wrapper .search .input-group input::placeholder {
+  font-weight: 600;
+  font-size: 0.8em;
+  color: var(--light-mode-txt);
+}
+.container-fluid main .main-wrapper .search .dropdownMenu {
+  width: 9%;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 0.9em;
+  font-weight: 600;
+  color: var(--light-mode-txt);
+  background-color: var(--light-mode-el);
+}
+.container-fluid main .main-wrapper .content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3em;
+}
+.container-fluid main .main-wrapper .content-wrapper #cardID {
+  background-color: var(--light-mode-el);
+}
+.container-fluid main .main-wrapper .content-wrapper #cardID img {
+  cursor: pointer;
+}
+.container-fluid main .main-wrapper .content-wrapper #cardID div #card-title {
+  color: var(--light-mode-txt);
+}
+.container-fluid main .main-wrapper .content-wrapper #cardID div #card-pop {
+  color: var(--light-mode-txt);
+}
+.container-fluid main .main-wrapper .content-wrapper #cardID div #card-pop span {
+  color: var(--light-mode-txt);
+}
+.container-fluid main .main-wrapper .content-wrapper #cardID div #card-region {
+  color: var(--light-mode-txt);
+}
+.container-fluid main .main-wrapper .content-wrapper #cardID div #card-region span {
+  color: var(--light-mode-txt);
+}
+.container-fluid main .main-wrapper .content-wrapper #cardID div #card-capital {
+  color: var(--light-mode-txt);
+}
+.container-fluid main .main-wrapper .content-wrapper #cardID div #card-capital span {
+  color: var(--light-mode-txt);
+}
+
+@media screen and (max-width: 420px) {
+  .main-wrapper {
+    padding: 2em 1em !important;
+  }
+  .main-wrapper .search {
+    flex-direction: column;
+    gap: 3em;
+  }
+  .main-wrapper .search .input-group {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .main-wrapper .search .dropdownMenu {
+    width: 60% !important;
+  }
+}/*# sourceMappingURL=homePage.css.map */
