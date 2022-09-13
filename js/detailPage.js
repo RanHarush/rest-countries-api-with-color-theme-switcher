@@ -9,7 +9,7 @@ window.addEventListener("load", () => {
 });
 
 backBtn.addEventListener("click", () => {
-  location.assign("https://ranharush.github.io/rest-countries-api-with-color-theme-switcher/index.html");
+  location.assign("google.com");
 });
 
 const loadAPI = (url) => {
