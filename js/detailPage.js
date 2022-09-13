@@ -9,7 +9,7 @@ window.addEventListener("load", () => {
 });
 
 backBtn.addEventListener("click", () => {
-  location.assign("./rest-countries-api-with-color-theme-switcher");
+  location.assign("index.html");
 });
 
 const loadAPI = (url) => {
