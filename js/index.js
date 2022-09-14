@@ -49,7 +49,8 @@ const displayCard = (obj) => {
 };
 
 const searchByName = (obj) => {
-  obj = obj.filter((item) => item.name.common.includes(inputID.value));
+  let regex = new RegExp(inputID.value, "i");
+  obj = obj.filter((item) => regex.test(item.name.common));
   displayCard(obj);
 };
 
