@@ -21,7 +21,7 @@ body {
 
 .container-fluid {
   background-color: var(--light-mode-bg);
-  height: 100vh;
+  height: auto;
 
   header {
     nav {
@@ -58,13 +58,14 @@ body {
         }
 
         .dropdownMenu {
-          width: 9%;
+          width: 30%;
           border: none;
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
           font-size: 0.9em;
           font-weight: 600;
           color: var(--light-mode-txt);
           background-color: var(--light-mode-el);
+          cursor: pointer;
         }
       }
 
