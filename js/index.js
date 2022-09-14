@@ -24,9 +24,9 @@ const loadAPI = (url) => {
 
 const displayCard = (obj) => {
   contentWrapper.innerHTML = "";
-  for (let [i,item] of Object.entries(obj)) {
+  for (let [i, item] of Object.entries(obj)) {
     contentWrapper.innerHTML += `
-     <div class="card mt-5 cardID" style="width: 21rem;">
+     <div class="card mt-5 cardID">
        <img src="${item.flags.png}" class="card-img-top" id="imgID_${i}" alt="${item.name.common}">
          <div class="card-body mt-2 mb-5 ms-3">
            <h5 class="card-title py-3 card-title">${item.name.common}</h5>
